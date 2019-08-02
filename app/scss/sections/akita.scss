@@ -4,9 +4,10 @@
         margin: 0;
         padding-left: 0;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
 
-        @media (max-width: 1600px) {
+        @media (max-width: 1200px) {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -16,9 +17,17 @@
 
     &__item {
         height: 365px;
-        width: 800px;
+        width: 40%;
         color: #fff;
         font-family: $ff-main-normal;
+
+        @media (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
 
         &--black {            
             background-color: #222222;

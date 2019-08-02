@@ -21,15 +21,24 @@
         text-align: center;
         padding-top: 120px;   
         padding-left: 0;
-        
-        @media (max-width: 1024px) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (max-width: 800px) {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 
     &__item {
-        margin: 10px;
+        margin: 10px;   
+        width: 20%;
+
+        @media (max-width: 1200px) {
+            width: 40%;
+        }
     }
 
     &__circle {
