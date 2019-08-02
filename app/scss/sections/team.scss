@@ -1,0 +1,54 @@
+.team {
+    text-align: center;
+    padding-bottom: 70px;
+
+    &__logo {
+        margin-top: -30px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        margin: 50px 0 50px;
+        font-family: $ff-main-normal;
+    }
+
+    .photos {
+        height: 200px;
+        background: red;
+        &__list {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            position: relative;
+        }
+
+        &__visitCard {
+            position: absolute;
+            bottom: -23%;
+            right: 50%;
+            left: 50%;   
+            height: 100px;
+            width: 200px;
+            background-color: #fff;
+            transform: translate(-50%, -50%);
+        }
+
+        &__name {            
+            color: $blue;
+            text-transform: uppercase;
+            margin: 15px 0 12px;
+            font-family: $ff-main-Medium;
+        }
+
+        &__profession {
+            margin: 0;
+            color: #000;
+            font-family: $ff-main-Medium;
+        }
+    }
+
+    
+}

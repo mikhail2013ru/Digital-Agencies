@@ -1,0 +1,137 @@
+.header {
+    .wrapper {
+        width: 100%;
+        border-bottom: 1px solid #7e7e7e;
+    }
+    height: 100vh;
+    background: #ccc url('../../img/main-logo.jpg') center/cover no-repeat;
+    &__top {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px 0 10px;
+
+        @media (max-width: 1140px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav {
+            display: inline-block;
+            vertical-align: top;
+
+            @media (max-width: 1140px) {
+                margin: 20px 0;
+            }
+
+            &__link {
+                display: inline-block;
+                vertical-align: top;
+                padding: 20px;
+                font-family: $ff-main-Medium;
+                color: #d8d8d8;
+                text-decoration: none;
+                text-transform: capitalize;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $blue;
+                }
+            }
+
+            @media (max-width: 666px) {
+                &--isVisible {
+                    display: none;
+                }
+            }
+        }  
+    } 
+    
+    &__links {
+        font-size: 1.3rem;
+    }
+
+    &__social {
+        padding: 5px;
+        .fa {
+            color: #fff;
+        }
+    }
+
+    &__bottom {
+        min-height: 60px;
+        padding: 150px 0 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 9rem;
+        text-transform: uppercase;
+        font-family: $ff-main-Bold;
+
+        @media (max-width: 900px) {
+            font-size: 6rem;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 4rem;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 3rem;
+        }
+    }
+
+    &__subtitles {
+        color: $blue;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.85rem;
+        font-family: $ff-main-Medium;
+
+        @media (max-width: 900px) {
+            font-size: 1rem;
+            letter-spacing: 0.75rem;
+        }
+
+        @media (max-width: 425px) {
+            letter-spacing: 0.3rem;
+        }
+
+        @media (max-width: 375px) {
+            letter-spacing: 0.06rem;
+        }
+    }
+
+    p {
+        color: #d6d5d5;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 80px;
+        font-family: $ff-main-Medium;
+    }
+
+    .btn-down {
+        position: relative;
+        margin: auto auto 20px;
+        width: 65px;
+        height: 65px;
+        border: 2px solid #fefefe;
+        border-radius: 50%;
+        
+    }
+
+    .angle-down {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        color: #fefefe;
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,43 @@
+.design {
+    height: 100vh;
+    padding: 250px 0 180px;
+    background: #ccc url('../../img/Design.jpg') center/cover no-repeat;
+    color: #fff;
+
+    &__header {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: $ff-main-Medium;
+    }
+
+    &__description {
+        font-size: 0.9rem;
+        color: #fff;
+        margin: 30px 0 50px 0;
+        width: 450px;
+        font-family: $ff-main-normal;
+    }
+
+    .progress {
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5rem;
+
+        &__text {
+            background-color: #11749e;
+            padding: 0 0 0 20px;
+            width: 400px;
+            font-family: $ff-main-Medium;
+
+            &--long {
+                width: 450px;
+            }
+
+            &--theLongest {
+                width: 500px;
+            }
+        }        
+    }
+}

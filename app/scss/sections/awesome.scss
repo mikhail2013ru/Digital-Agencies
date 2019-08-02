@@ -1,0 +1,55 @@
+.awesome {
+    background: #ccc url('../../img/awesome-logo.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+
+    .title {        
+        &__header {
+            color: #fff;
+            font-family: $ff-main-Medium;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;; 
+            margin: 0;
+            padding: 210px 0 100px 0;
+        }
+        
+    }
+
+    &__list {
+        display: flex;
+        text-align: center;
+        padding-top: 120px;   
+        padding-left: 0;
+        
+        @media (max-width: 1024px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        margin: 10px;
+    }
+
+    &__circle {
+        margin: auto;
+        justify-content: center;
+        width: 130px;
+        display: flex;
+        height: 130px;
+        background: #2e85aa;
+        border-radius: 50%;
+    }
+
+    &__header {
+        font-family: $ff-main-Medium;
+        text-transform: uppercase;
+        margin: 25px 0 35px;
+    }
+
+    &__description {
+        font-size: 0.9rem;
+        font-family: $ff-main-normal;
+    }
+}

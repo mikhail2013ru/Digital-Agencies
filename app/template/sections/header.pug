@@ -1,0 +1,39 @@
+ul.m-mobile-menu
+    li: img(src="img/logo.png", alt="Logo")
+
+header.header
+    .wrapper
+        .container
+            .header__top
+                .logo: img.logo__picture(src="img/logo.png", alt="picture")
+                .nav.nav--isVisible
+                    - var items = ['Home', 'Pages', 'Features', 'Extensions', 'Tutorials', 'Contact us']
+                    - var dataItems = ['header', 'awesome', 'Features', 'Extensions', 'Tutorials', 'Contact us']
+
+                        each item in items
+                            if item === 'Home'
+                                a.nav__link.nav__link--active(href="#" data-link=dataItems[key])= item
+                            else 
+                                a.nav__link(href="#" data-link=dataItems[key])= item
+
+                .m-mobile-link
+                    i.fa.fa-bars(aria-hidden="true")
+
+                .header__links
+                    a.header__social(href="http://facebook.com")
+                        i.fa.fa-facebook(aria-hidden="true")
+                    a.header__social(href="http://twitter.com")
+                        i.fa.fa-twitter(aria-hidden="true")
+                    a.header__social(href="https://www.skype.com/ru")
+                        i.fa.fa-skype(aria-hidden="true")
+                    a.header__social(href="http://linkedin.com")
+                        i.fa.fa-linkedin(aria-hidden="true")
+    .container
+        .header__bottom
+            .header__title creatives
+            .header__subtitles power by psdfreebies.com
+        p Scroll Down
+        .btn-down
+            a.angle-down(href="#")
+                i.fa.fa-angle-down(aria-hidden="true")
+
