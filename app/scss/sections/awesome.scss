@@ -11,6 +11,10 @@
             text-transform: uppercase;
             font-size: 2rem;; 
             margin: 0;
+
+            @media (max-width: 320px) {
+                font-size: 1.5rem;
+            }
         }
 
         &__image {
@@ -47,6 +51,10 @@
         @media (max-width: 1200px) {
             width: 40%;
         }
+
+        @media (max-width: 320px) {
+            width: 80%;
+        }
     }
 
     &__circle {
@@ -63,6 +71,10 @@
         font-family: $ff-main-Medium;
         text-transform: uppercase;
         margin: 25px 0 35px;
+
+        @media (max-width: 320px) {
+            font-size: 1.5rem;
+        }
     }
 
     &__description {
