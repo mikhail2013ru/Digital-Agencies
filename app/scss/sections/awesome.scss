@@ -1,10 +1,9 @@
 .awesome {
-    background: #ccc url('../img/awesome-logo.jpg') center/cover no-repeat;
+    background-color: $blue;
     color: #fff;
-    height: 2000px;
-    //min-height: 700px;
-    padding: 180px 0 80px 0;
-    .title {        
+    padding: 200px 0 80px 0;
+    .title {
+        position: relative;        
         &__header {
             color: #fff;
             font-family: $ff-main-Medium;
@@ -12,7 +11,14 @@
             text-transform: uppercase;
             font-size: 2rem;; 
             margin: 0;
-            //padding: 210px 0 100px 0;
+        }
+
+        &__image {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
         }
         
     }

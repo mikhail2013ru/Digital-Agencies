@@ -1,5 +1,4 @@
 .akita {
-    height: 1500px;
     background-color: brown;
     &__list {
         margin: 0;
@@ -25,24 +24,24 @@
 
     &__item {
         height: 22rem;
-        width: 35%;
+        width: 42%;
         color: #fff;
-        font-family: $ff-main-normal;
-
+        font-family: $ff-main-normal;        
+        
+        @media (max-width: 1200px) {
+            width: 50%;
+        }
+        
         @media (max-width: 800px) {
             height: 12rem;
         }
 
-        @media (max-width: 375px) {
-            height: 8rem;
-        }
-
-        @media (max-width: 1200px) {
+        @media (max-width: 576px) {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 50%;
+            width: 300px;
         }
 
         &--black {            

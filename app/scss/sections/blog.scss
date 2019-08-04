@@ -11,13 +11,20 @@
     .fresh {
         &__list {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             padding: 0;
 
-            @media (max-width: 1599px) {
+            @media (max-width: 768px) {
                 display: flex;
-                //flex-direction: column;
-                flex-wrap: wrap;
+                justify-content: space-around;
+
+            }
+
+            @media (max-width: 320px) {
+                display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
@@ -25,8 +32,15 @@
 
         &__item {
             margin: 15px;
-            height: 280px;
-            width: 270px;
+            width: 20%;
+
+            @media (max-width: 768px) {
+                width: 30%;
+            }
+
+            @media (max-width: 320px) {
+                width: 85%;
+            }
         }
 
         &__header {
@@ -41,6 +55,7 @@
             font-size: 0.85rem;
             color: #898989;
             font-family: $ff-main-normal;
+            padding: 10px 25px 0 25px;
         }
     }
 }
