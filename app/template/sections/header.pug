@@ -1,6 +1,24 @@
-ul.m-mobile-menu
-    li: img(src="img/logo.png", alt="Logo")
+.m-menu
+    .close-menu &times;
+    .m-menu__image: img(src="img/logo.png", alt="Logo")
+    .m-menu__item
+        a.m-menu__link.m-menu__link--active(href="#") Home
+        a.m-menu__link(href="#") Pages
+        a.m-menu__link(href="#") Features
+        a.m-menu__link(href="#") Extensions
+        a.m-menu__link(href="#") Tutorials
+        a.m-menu__link(href="#") Contact us
 
+    .m-menu__links
+        a.m-menu__social(href="http://facebook.com")
+            i.fa.fa-facebook(aria-hidden="true")
+        a.m-menu__social(href="http://twitter.com")
+            i.fa.fa-twitter(aria-hidden="true")
+        a.m-menu__social(href="https://www.skype.com/ru")
+            i.fa.fa-skype(aria-hidden="true")
+        a.m-menu__social(href="http://linkedin.com")
+            i.fa.fa-linkedin(aria-hidden="true")
+    
 header.header
     .wrapper
         .container
@@ -16,7 +34,7 @@ header.header
                             else 
                                 a.nav__link(href="#" data-link=dataItems[key])= item
 
-                .m-mobile-link
+                .m-link
                     i.fa.fa-bars(aria-hidden="true")
 
                 .header__links

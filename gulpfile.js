@@ -68,7 +68,7 @@ gulp.task('scripts', function() {
 //JS:Libraries
 gulp.task('JS:Libraries', function() {
 	return gulp.src([
-		//'app/libs/jquery/jquery-3.4.1.min.js',
+		'app/libs/jquery/jquery-3.4.1.min.js'
 		//'app/libs/wow/wow.min.js'
 		])
 	.pipe(sourcemaps.init())
@@ -138,4 +138,4 @@ gulp.task('watch', function() {
 	gulp.watch('app/img/_src/**/*', gulp.parallel('img'));
 });
 
-gulp.task('default', gulp.parallel('img', 'styles', 'scripts', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('img', 'styles', 'scripts', 'JS:Libraries', 'browser-sync', 'watch'));

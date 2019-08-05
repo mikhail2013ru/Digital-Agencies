@@ -1,4 +1,4 @@
-.m-mobile-link {
+.m-link {
     color: #fff;
     font-size: 2rem;
     padding: 20px 0;
@@ -12,7 +12,11 @@
     }
 }
 
-.m-mobile-menu {
+.m-menu {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $ff-main-Medium;
+    line-height: 3rem;
     padding: 0;
     margin: 0;
     position: fixed;
@@ -20,11 +24,79 @@
     top: 0;
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    transition: 0.2s;
-    transform: translateX(-100%)
+    transition: 0.2s;   
+    z-index: 99; 
+    transform: translateX(100%); 
+    background: rgb(2,0,36);
+    background: linear-gradient(355deg, rgba(2,0,36,1) 0%, rgba(13,13,152,1) 99%, rgba(0,212,255,1) 100%);
+
+    .close-menu {
+        position: fixed;
+        right: 3rem;
+        top: 3rem;
+        font-size: 3rem;
+        font-weight: 900;
+        color: #fff;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;        
+
+        .fa {
+            color: #fff;
+        }
+    }
+
+    &__social {
+        padding-right: 10px;
+    }
 }
+
+.m-menu__active {
+    transform: translateX(0);
+}
+
+//     &__item {   
+//         padding-bottom: 10px;
+//         font-family: $ff-main-Medium;
+//         padding: 20px 0;
+//         color: #fff;        
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         z-index: 999;
+//         background: rgb(2,0,36);
+//         background: linear-gradient(355deg, rgba(2,0,36,1) 0%, rgba(13,13,152,1) 99%, rgba(0,212,255,1) 100%);
+
+//         &:last-child {
+//             padding-bottom: 0;
+//         }
+//     }
+
+//     &__links {
+//         font-size: 1.3rem;
+//     }
+
+//     &__social {
+//         padding: 5px;
+//         .fa {
+//             color: #fff;
+//         }
+//     }
+// }
+
+// .m-mobile-active {
+//     transform: translateX(0);
+// }
+
